@@ -1,6 +1,8 @@
 import React from 'react'
 import { node, string } from 'prop-types'
 
+const isProd = process.env.NODE_ENV === 'production'
+
 export default function Page({ children, title, description, twitter, host }) {
   return (
     <html lang={'nl'}>
@@ -40,6 +42,8 @@ export default function Page({ children, title, description, twitter, host }) {
 
       <body>
         {children}
+
+        <script src={isProd ? '/dist/bundle.js' : 'http://0.0.0.0:3000/dist/bundle.js'} />
       </body>
     </html>
   )

@@ -1,16 +1,21 @@
 import React from 'react'
+import { string } from 'prop-types'
 
-import Page from './Page'
+import Page from './components/Page'
 
-export default function Home() {
+export default function Home({ title }) {
   return (
     <Page
-      description={'Hier de description'}
+      description={'Zijn de Wordpress sites wel up to date?'}
       host={'localhost'}
-      title={'Hier de title'}
-      twitter={'@floephaan'}
+      title={title}
+      twitter={'@kaliberinteract'}
     >
-      <p>test</p>
+      {title}
     </Page>
   )
+}
+
+Home.propTypes = {
+  title: string.isRequired,
 }

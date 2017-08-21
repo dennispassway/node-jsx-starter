@@ -1,0 +1,11 @@
+:root {
+  --color-text: #211A1E;
+  --color-offwhite: #F7F9FA;
+  --color-white: #FFFFFF;
+
+  --font-size-m: 16px;
+
+  --font-weight-bold: 700;
+}
+
+@custom-media --viewport-m (min-width: 768px);
