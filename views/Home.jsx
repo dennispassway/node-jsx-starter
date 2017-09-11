@@ -6,10 +6,10 @@ import Page from './components/Page'
 export default function Home({ title }) {
   return (
     <Page
-      description={'Zijn de Wordpress sites wel up to date?'}
+      description={'Description'}
       host={'localhost'}
       title={title}
-      twitter={'@kaliberinteract'}
+      twitter={'@dennispassway'}
     >
       {title}
     </Page>
